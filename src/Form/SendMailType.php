@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\SendMail;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -15,6 +16,7 @@ class SendMailType extends AbstractType
             ->add('sendTo')
             ->add('sendFrom')
             ->add('message')
+            ->add('submit',SubmitType::class)
         ;
     }
 
