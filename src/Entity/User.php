@@ -49,9 +49,6 @@ class User implements UserInterface
      */
     private $resetToken;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $confirmPassword;
 
     public function getId(): ?int

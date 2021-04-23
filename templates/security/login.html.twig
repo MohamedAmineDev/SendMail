@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %} {% block title %}Se connecter{% endblock %} {%
+block body %}
+<style></style>
+
+<div>
+  <h1>Se connecter</h1>
+  <form action="{{ path('app_login') }}" method="post">
+    <div>
+      <label for="username">Email </label>
+      <input
+        type="email"
+        name="_username"
+        id="username"
+        placeholder="exemple@gmail.com"
+      />
+    </div>
+    <div>
+      <label for="password">password </label>
+      <input type="password" name="_password" id="password" />
+    </div>
+    <span>
+      <input type="submit" value="login" />
+      <input type="reset" value="reset" />
+    </span>
+  </form>
+</div>
+{% endblock %}
